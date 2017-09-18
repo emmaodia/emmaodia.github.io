@@ -5,7 +5,7 @@ title: First Post!
 
 > You will never be ready, just be prepared. - Author: Me 
 
-![sea diving](https://unsplash.com/search/photos/sky-diving?photo=Rc9mLOR7KaI)
+![sea-diver]({{ site.baseurl }}/images/sea-diver.jpg)
 
 ## Hi, My name is Emma Odia. Welcome to my corner on the internet block!
 
