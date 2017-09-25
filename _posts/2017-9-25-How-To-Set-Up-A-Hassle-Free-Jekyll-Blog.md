@@ -12,9 +12,7 @@ title: How To Set Up a Hassle Free Jekyll Blog!
 The opening + The post topic will give you an inkling of the aimof this post, which is: 
 "Forget the 'pazzaz' set up your techie blog that you have been postponing!"
 
-This post will serve as a sequential guide in the right order using the right tools to get your first "Hello World" post out on the internet.
-This post WILL NOT go into detailing and historical signifance of owning your own blog. 
-There will be added links at the end of the post in the hope that the links will serve whatever the need you have for them. Leggo!
+This post will serve as a sequential guide in the right order using the right tools to get your first "Hello World" post out on the internet.   This post WILL NOT go into detailing and historical signifance of owning your own blog.  There will be added links at the end of the post in the hope that the links will serve whatever the need you have for them. Leggo!
 
 1. Fork this repository [Barry Clark](https://github.com/barryclark/jekyll-now)
 2. When the above step has completed. Open the repo >> Click Settings >> Rename the repo to <username>.github.io
