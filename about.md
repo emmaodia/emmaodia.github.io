@@ -6,7 +6,7 @@ permalink: /about/
 
 Software Developer
 
-### More Information
+### Stack
 Ruby and JavaScript
 
 ### Contact me
