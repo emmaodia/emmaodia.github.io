@@ -1,8 +1,12 @@
 
 main {
   padding: 10px;
+  font-family: 'Baloo Bhai', cursive;
 }
 
 .image {
   width: 500px;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
