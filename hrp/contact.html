@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>House Rent Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/magnific-popup.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/kto.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/logos/logo.png" type="image/x-icon" >
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script type="text/javascript" src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="page_loader"></div>
+
+
+<!-- Main header start -->
+<header class="main-header">
+    <div class="container">
+            <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse-side" data-target=".navbar-collapse" data-target-2=".navbar-collapse-container"  >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="logo">
+                            <img src="img/logos/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse collapse" role="navigation"  id=".navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="">
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right rightside-navbar">
+                            <li class="m-r-20">
+                                <a href="" class="button" data-toggle="modal" data-target="#loginModal">
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#signupModal" class="button" style="background: #c3192d !important; color: #fff !important; border: 1px solid #d8e2dc !important">
+                                    Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    </div>
+</header>
+<!-- Main header end -->
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="overlay">
+        <div class="container">
+            <div class="breadcrumb-area">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Contact body start -->
+<div class="contact-1 content-area-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                <!-- Contact form start -->
+                <div class="contact-form">
+                    <form id="contact_form" action="index.html" method="GET" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group fullname">
+                                    <input type="text" name="full-name" class="input-text" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group enter-email">
+                                    <input type="email" name="email" class="input-text" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group subject">
+                                    <input type="text" name="subject" class="input-text" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group number">
+                                    <input type="text" name="phone" class="input-text" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+                                <div class="form-group message">
+                                    <textarea class="input-text" name="message" placeholder="Write message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group send-btn mb-0">
+                                    <button type="submit" class="button-md button-theme">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>     
+                </div>
+                <!-- Contact form end -->
+            </div>
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
+                <!-- Contact details start -->
+                <div class="contact-details">
+                    <div class="main-title-2">
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-facebook fb-col"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Facebook</h4>
+                            <a href="https://business.facebook.com/knowledgetoown/?business_id=385968601979629" target="_blank">
+                                <p class="p-col"> HRP </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-twitter twt-col"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Twitter</h4>
+                            <a href="https://twitter.com/HomeKto" target="_blank">
+                                <p class="p-col"> HRP </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media mb-0">
+                        <div class="media-left">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Email Address</h4>
+                            <a href="mailto:info@hrp.com">
+                                <p class="p-col">info@hrp.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact details end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact body end -->
+
+<!-- Footer start -->
+<footer class="main-footer clearfix">
+        <div class="container">
+            <!-- Footer info-->
+            <div class="footer-info">
+                <div class="row">
+                    <!-- About us -->
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <div class="main-title-2">
+                                <h1>Contact Us</h1>
+                            </div>
+                            <ul class="personal-info">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Lagos, Nigeria
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    Email:<a href="">info@hrp.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    Phone: <a href="tel:+55-417-634-7071">0803 095 0331</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Links -->
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <div class="main-title-2">
+                                <h1>Links</h1>
+                            </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"> Contact Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <!-- Subscribe -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-item">
+                            <div class="main-title-2">
+                                <h1>Subscribe</h1>
+                            </div>
+                            <div class="newsletter clearfix">
+                                <p>
+                                    Subscribe and be the first to know of our new programs.
+                                </p>
+    
+                                <form action="#" method="post">
+                                    <div class="form-group">
+                                        <input class="nsu-field btn-block" id="nsu-email-0" type="text" name="email" placeholder="Enter your Email Address" required="">
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <button type="submit" class="button-sm button-theme btn-block">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    
+<!-- Copy right start -->
+<div class="copy-right">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-12">
+                &copy;  2019 <a href="#" target="_blank">House Rent Portal</a>. All rights reserved.
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <ul class="social-list clearfix">
+                    <li>
+                        <a href="#" target="_blank" class="facebook">
+                            <i class="fa fa-facebook fb-col fz-16"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="twitter">
+                            <i class="fa fa-twitter twt-col fz-16"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="instagram">
+                            <i class="fa fa-instagram ig-col fz-16"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copy end right-->
+
+<!-- Login Modal -->
+<div class="modal property-modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="carModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row modal-raw">
+            <div class="col-lg-12">
+                <!-- Form content box start -->
+                <div class="form-content-box">
+                    <!-- details -->
+                    <div class="details">
+                        <!-- Main title -->
+                        <div class="main-title">
+                            <h1>Login</h1>
+                        </div>
+                        <!-- Form start -->
+                        <form action="index.html" method="GET">
+                            <div class="form-group">
+                                <input type="email" name="email" class="input-text" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="Password" class="input-text" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <div class="ez-checkbox pull-left">
+                                    <label>
+                                        <input type="checkbox" class="ez-hide">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="forgot-password.html" class="link-not-important pull-right">Forgot Password?</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="button-md button-theme btn-block">login</button>
+                            </div>
+                        </form>
+                        <!-- Form end -->
+                        <div class="row modal-row">
+                                <div class="col-lg-3">
+                                  <!-- <div class="hr-line"></div> -->
+                                </div>
+                                <div class="col-lg-6">
+                                  <p class="text-center">Or use your social profile</p>
+                                </div>
+                                <div class="col-lg-3">
+                                  <!-- <div class="hr-line"></div> -->
+                                </div>
+                              </div>
+                              <div class="row modal-raw">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <button
+                                      type="submit"
+                                      class="button-md social-button btn-block"
+                                    >
+                                      <img src="img/google.png" alt="" />
+                                      Google
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <button
+                                      type="submit"
+                                      class="button-md social-button btn-block"
+                                    >
+                                      <img src="img/facebook.png" alt="" />
+                                      Facebook
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                    </div>
+                    <!-- Footer -->
+                    <div class="footer">
+                        <span>
+                            <a href="signup.html"> Register </a> Sign up now
+                        </span>
+                    </div>
+                </div>
+                <!-- Form content box end -->
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- EndLogin Modal -->
+
+<!-- Sign up Modal -->
+<div class="modal property-modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="carModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row modal-raw">
+            <div class="col-lg-12">
+                <!-- Form content box start -->
+                <div class="form-content-box">
+                        <!-- details -->
+                        <div class="details">
+                          <!-- Main title -->
+                          <div class="main-title">
+                            <h1><span>Sign Up</span></h1>
+                          </div>
+                          <!-- Form start-->
+                          <form action="index.html" method="GET">
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    name="firstname"
+                                    class="input-text"
+                                    placeholder="First Name"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    name="lastname"
+                                    class="input-text"
+                                    placeholder="Last Name"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <input
+                                type="email"
+                                name="email"
+                                class="input-text"
+                                placeholder="Email Address"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <input
+                                type="password"
+                                name="password"
+                                class="input-text"
+                                placeholder="Password"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <input
+                                type="password"
+                                name="confirm_Password"
+                                class="input-text"
+                                placeholder="Confirm Password"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <a
+                                href="fill-profile.html"
+                                class="button-md button-theme btn-block"
+                              >
+                                Signup
+                              </a>
+                            </div>
+                          </form>
+                          <!-- Form end-->
+                          <div class="row modal-row">
+                            <div class="col-lg-3">
+                              <!-- <div class="hr-line"></div> -->
+                            </div>
+                            <div class="col-lg-6">
+                              <p class="text-center">Or use your social profile</p>
+                            </div>
+                            <div class="col-lg-3">
+                              <!-- <div class="hr-line"></div> -->
+                            </div>
+                          </div>
+                          <div class="row modal-raw">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <button
+                                  type="submit"
+                                  class="button-md social-button btn-block"
+                                >
+                                  <img src="img/google.png" alt="" />
+                                  Google
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <button
+                                  type="submit"
+                                  class="button-md social-button btn-block"
+                                >
+                                  <img src="img/facebook.png" alt="" />
+                                  Facebook
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Footer -->
+                        <div class="footer">
+                          <span>
+                            Already have an account?
+                            <a href="login.html">return to login</a>
+                          </span>
+                        </div>
+                      </div>
+                <!-- Form content box end -->
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sign up Modal -->
+
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-submenu.js"></script>
+<script src="js/rangeslider.js"></script>
+<script src="js/jquery.mb.YTPlayer.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/leaflet-providers.js"></script>
+<script src="js/leaflet.markercluster.js"></script>
+<script src="js/dropzone.js"></script>
+<script src="js/jquery.filterizr.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+        $(document).ready(function() {   
+            var sideslider = $('[data-toggle=collapse-side]');
+            var sel = sideslider.attr('data-target');
+            var sel2 = sideslider.attr('data-target-2');
+            sideslider.click(function(event){
+                $(sel).toggleClass('in');
+                $(sel2).toggleClass('out');
+            });
+        });
+    </script>
+</body>
+</html>
