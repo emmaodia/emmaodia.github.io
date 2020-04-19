@@ -5,7 +5,7 @@
   background-color: white;
 }
 
-li, a {
+li, a, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -39,17 +39,25 @@ header img {
 }
 
 .nav_links li a {
-  transform: all 0.3s ease 0s; 
+  transition: all 0.3s ease 0s; 
 }
 
 .nav_links li a:hover {
   color: purple;
 }
 
-button:hover {
-  background: rgba(0, 136, 169, 0.0);
+button {
+  padding: 9px 30x;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
+button:hover {
+  color:purple;
+}
 
 main {
   padding: 10px;
@@ -65,4 +73,5 @@ p {
   max-width: 100%;
   display: block;
   height: auto;
+  border-radius: 50px;
 }
