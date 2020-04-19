@@ -1,3 +1,16 @@
+header {
+  padding: 0px 10px;
+  display: flex;
+}
+
+.header-tags {
+  margin: 0px 10px;
+}
+
+header a:hover {
+  background-color: turquoise;
+  color: whitesmoke;
+}
 
 main {
   padding: 10px;
