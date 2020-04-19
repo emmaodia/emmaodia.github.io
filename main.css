@@ -1,6 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+} 
+
 header {
-  padding: 0px 10px;
+  padding: 30px 10px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-tags {
