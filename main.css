@@ -74,6 +74,7 @@ button:hover {
   height: 1px;
   background-color: blue;
   margin: 5px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px){
@@ -121,7 +122,17 @@ button:hover {
   }
 }
 
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 main {
   padding: 10px;
