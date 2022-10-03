@@ -9,7 +9,7 @@ const options = {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
-    Authorization: AUTH_KEY,
+    Authorization: "ec3ee3d3-e99c-4e78-b13c-9979c89dc86e",
   },
 };
 
